@@ -52,6 +52,11 @@ public class Meal {
 		this.notes = notes;
 	}
 
+	public boolean isVegetarian() {
+		return category.toLowerCase().equals("vegetarisch") || category.toLowerCase().equals("vegan");
+
+	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
